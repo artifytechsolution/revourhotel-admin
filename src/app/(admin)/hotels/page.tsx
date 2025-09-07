@@ -5542,7 +5542,7 @@ export default function HotelTablePage() {
       
       console.log("🗑️ Deleting hotel:", deleteModal.name, "ID:", deleteModal.id);
       
-      const response = await fetch('http://localhost:8000/hotels/delete', {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_BASE_URL}${'/hotels/delete'}`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',
@@ -5653,7 +5653,7 @@ export default function HotelTablePage() {
 
       console.log("Sending amenities payload:", amenitiesPayload);
 
-      const response = await fetch('http://localhost:8000/hotels/addAmenities', {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_BASE_URL}${'/hotels/addAmenities'}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -5754,7 +5754,7 @@ export default function HotelTablePage() {
 
         console.log(`Sending policy ${index + 1}/${validPolicies.length}:`, policyPayload);
 
-        const response = await fetch('http://localhost:8000/hotels/addpolicy', {
+        const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_BASE_URL} ${'/hotels/addpolicy'}`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
