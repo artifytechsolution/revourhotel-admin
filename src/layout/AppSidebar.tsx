@@ -40,6 +40,7 @@ const navItems: any = [
   { icon: <AlarmOffRounded />, name: "Orders", path: "/orders" },
   { icon: <AlarmOffRounded />, name: "Ordersdetails", path: "/orderdetails" },
   { icon: <Hotel />, name: "hotelunavailable", path: "/hotelunavailable" },
+  { icon: <Hotel />, name: "HotelEdit", path: "/hoteledit" },
   { icon: <Hotel />, name: "ReservedHotelsSchedule", path: "/reservedHotelsSchedule" },
 ];
 
