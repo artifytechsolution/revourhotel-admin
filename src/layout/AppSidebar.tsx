@@ -25,6 +25,7 @@ const routeAccess: Record<string, string[]> = {
   "/orderdetails": ["HOTEL"],
   "/hotelunavailable": ["HOTEL"],
   "/reservedHotelsSchedule": ["ADMIN"],
+  '/HotelEdit': ["ADMIN"],
 };
 
 type NavItem = {

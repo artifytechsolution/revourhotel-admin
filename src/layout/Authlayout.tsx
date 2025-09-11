@@ -53,7 +53,8 @@ const routeAccess: Record<string, string[]> = {
   "/orderdetails": ["HOTEL"], // all logged-in users
   "/hotelunavailable": ["HOTEL"],
   "/reservedHotelsSchedule":["ADMIN"],
-  "/login ":["ADMIN","HOTEL"]
+  "/login ":["ADMIN","HOTEL"],
+  "/hoteledit":["ADMIN"]
 };
 
 type Props = { children: React.ReactNode };
