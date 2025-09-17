@@ -5754,7 +5754,7 @@ export default function HotelTablePage() {
 
         console.log(`Sending policy ${index + 1}/${validPolicies.length}:`, policyPayload);
 
-        const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_BASE_URL} ${'/hotels/addpolicy'}`, {
+        const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_BASE_URL}/hotels/addpolicy`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
